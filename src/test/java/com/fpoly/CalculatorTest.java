@@ -1,6 +1,7 @@
 package com.fpoly;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 
 
@@ -8,7 +9,7 @@ public class CalculatorTest {
     @Test
     void testAdd() {
         Calculator c = new Calculator();
-        assertEquals(5, c.add(2, 3));
+        assertEquals(6, c.add(2, 3));
     }
 
     @Test
